@@ -1,0 +1,23 @@
+spring :
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://192.168.10.213:5432/db
+    username: user
+    password: password
+#    driver-class-name: org.h2.Driver
+  jpa:
+    properties:
+      hibernate :
+        dialect : org.hibernate.dialect.PostgreSQLDialect
+        show_sql : true
+        format_sql : true
+        ddl-auto: create
+
+
+
+logging:
+  level:
+#    org.hibernate.SQL : DEBUG
+    org.hibernate.type : trace
+
+
